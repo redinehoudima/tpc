@@ -1,34 +1,644 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-        google.charts.load('current', {packages: ['corechart']});
-        google.charts.setOnLoadCallback(drawChart);
+<script>window.enableEventObserver=true</script>
+<script src="https://cdn01.jotfor.ms/static/prototype.forms.js?v=3.3.60749" type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/static/jotform.forms.js?v=3.3.60749" type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/js/punycode-1.4.1.min.js?v=3.3.60749" type="text/javascript" defer></script>
+<script src="https://cdn01.jotfor.ms/s/umd/ba36a24770b/for-widgets-server.js?v=3.3.60749" type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/js/vendor/math-processor.js?v=3.3.60749" type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/s/umd/ba36a24770b/for-form-branding-footer.js?v=3.3.60749" type="text/javascript" defer></script>
+<script src="https://cdn02.jotfor.ms/js/vendor/smoothscroll.min.js?v=3.3.60749" type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/js/errorNavigation.js?v=3.3.60749" type="text/javascript"></script>
+<script type="text/javascript">	JotForm.newDefaultTheme = false;
+	JotForm.extendsNewTheme = true;
+	JotForm.singleProduct = false;
+	JotForm.newPaymentUIForNewCreatedForms = true;
+	JotForm.texts = {"confirmEmail":"E-mail does not match","pleaseWait":"Please wait...","validateEmail":"You need to validate this e-mail","confirmClearForm":"Are you sure you want to clear the form","lessThan":"Your score should be less than or equal to","incompleteFields":"There are incomplete required fields. Please complete them.","required":"This field is required.","requireOne":"At least one field required.","requireEveryRow":"Every row is required.","requireEveryCell":"Every cell is required.","email":"Enter a valid e-mail address","alphabetic":"This field can only contain letters","numeric":"This field can only contain numeric values","alphanumeric":"This field can only contain letters and numbers.","cyrillic":"This field can only contain cyrillic characters","url":"This field can only contain a valid URL","currency":"This field can only contain currency values.","fillMask":"Field value must fill mask.","uploadExtensions":"You can only upload following files:","noUploadExtensions":"File has no extension file type (e.g. .txt, .png, .jpeg)","uploadFilesize":"File size cannot be bigger than:","uploadFilesizemin":"File size cannot be smaller than:","gradingScoreError":"Score total should only be less than or equal to","inputCarretErrorA":"Input should not be less than the minimum value:","inputCarretErrorB":"Input should not be greater than the maximum value:","maxDigitsError":"The maximum digits allowed is","minCharactersError":"The number of characters should not be less than the minimum value:","maxCharactersError":"The number of characters should not be more than the maximum value:","freeEmailError":"Free email accounts are not allowed","minSelectionsError":"The minimum required number of selections is ","maxSelectionsError":"The maximum number of selections allowed is ","pastDatesDisallowed":"Date must not be in the past.","dateLimited":"This date is unavailable.","dateInvalid":"This date is not valid. The date format is {format}","dateInvalidSeparate":"This date is not valid. Enter a valid {element}.","ageVerificationError":"You must be older than {minAge} years old to submit this form.","multipleFileUploads_typeError":"{file} has invalid extension. Only {extensions} are allowed.","multipleFileUploads_sizeError":"{file} is too large, maximum file size is {sizeLimit}.","multipleFileUploads_minSizeError":"{file} is too small, minimum file size is {minSizeLimit}.","multipleFileUploads_emptyError":"{file} is empty, please select files again without it.","multipleFileUploads_uploadFailed":"File upload failed, please remove it and upload the file again.","multipleFileUploads_onLeave":"The files are being uploaded, if you leave now the upload will be cancelled.","multipleFileUploads_fileLimitError":"Only {fileLimit} file uploads allowed.","dragAndDropFilesHere_infoMessage":"Drag and drop files here","chooseAFile_infoMessage":"Choose a file","maxFileSize_infoMessage":"Max. file size","generalError":"There are errors on the form. Please fix them before continuing.","generalPageError":"There are errors on this page. Please fix them before continuing.","wordLimitError":"Too many words. The limit is","wordMinLimitError":"Too few words.  The minimum is","characterLimitError":"Too many Characters.  The limit is","characterMinLimitError":"Too few characters. The minimum is","ccInvalidNumber":"Credit Card Number is invalid.","ccInvalidCVC":"CVC number is invalid.","ccInvalidExpireDate":"Expire date is invalid.","ccInvalidExpireMonth":"Expiration month is invalid.","ccInvalidExpireYear":"Expiration year is invalid.","ccMissingDetails":"Please fill up the credit card details.","ccMissingProduct":"Please select at least one product.","ccMissingDonation":"Please enter numeric values for donation amount.","disallowDecimals":"Please enter a whole number.","restrictedDomain":"This domain is not allowed","ccDonationMinLimitError":"Minimum amount is {minAmount} {currency}","requiredLegend":"All fields marked with * are required and must be filled.","geoPermissionTitle":"Permission Denied","geoPermissionDesc":"Check your browser's privacy settings.","geoNotAvailableTitle":"Position Unavailable","geoNotAvailableDesc":"Location provider not available. Please enter the address manually.","geoTimeoutTitle":"Timeout","geoTimeoutDesc":"Please check your internet connection and try again.","selectedTime":"Selected Time","formerSelectedTime":"Former Time","cancelAppointment":"Cancel Appointment","cancelSelection":"Cancel Selection","noSlotsAvailable":"No slots available","slotUnavailable":"{time} on {date} has been selected is unavailable. Please select another slot.","multipleError":"There are {count} errors on this page. Please correct them before moving on.","oneError":"There is {count} error on this page. Please correct it before moving on.","doneMessage":"Well done! All errors are fixed.","invalidTime":"Enter a valid time","doneButton":"Done","reviewSubmitText":"Review and Submit","nextButtonText":"Next","prevButtonText":"Previous","seeErrorsButton":"See Errors","notEnoughStock":"Not enough stock for the current selection","notEnoughStock_remainedItems":"Not enough stock for the current selection ({count} items left)","soldOut":"Sold Out","justSoldOut":"Just Sold Out","selectionSoldOut":"Selection Sold Out","subProductItemsLeft":"({count} items left)","startButtonText":"START","submitButtonText":"Submit","submissionLimit":"Sorry! Only one entry is allowed. <br> Multiple submissions are disabled for this form.","reviewBackText":"Back to Form","seeAllText":"See All","progressMiddleText":"of","fieldError":"field has an error.","error":"Error"};
+	JotForm.newPaymentUI = true;
+	JotForm.originalLanguage = "en";
+	JotForm.isFormViewTrackingAllowed = true;
+	JotForm.replaceTagTest = true;
+	JotForm.uploadServerURL = "https://upload.jotform.com/upload";
 
-        function drawChart() {
-            fetch("https://api.jotform.com/form/250346906440050/submissions?apiKey=2373ec7e615a3f08d1867c89009aed78")
-                .then(response => response.json())
-                .then(data => {
-                    let submissions = data.content;
-                    let chartData = [['Name', 'Value']]; // Header
+   JotForm.setCalculations([{"allowZeroCopy":"1","decimalPlaces":"0","equation":"[{8}+{12}+{13}+{14}+{15}]","ignoreHiddenFields":"0","insertAsText":"0","newCalculationType":"1","operands":"8,12,13,14,15","readOnly":"1","replaceText":"","resultField":"18","showBeforeInput":"0","showEmptyDecimals":"0","useCommasForDecimals":"0"},{"replaceText":"","readOnly":false,"newCalculationType":true,"allowZeroCopy":true,"useCommasForDecimals":false,"operands":"38","equation":"{38}","showBeforeInput":false,"showEmptyDecimals":false,"ignoreHiddenFields":false,"insertAsText":false,"id":"action_0_1731244182533","resultField":"27","decimalPlaces":"2","isError":false,"conditionId":"1731243853965","conditionTrue":false,"baseField":"8"},{"replaceText":"","readOnly":false,"newCalculationType":true,"allowZeroCopy":true,"useCommasForDecimals":false,"operands":"39","equation":"{39}","showBeforeInput":false,"showEmptyDecimals":false,"ignoreHiddenFields":false,"insertAsText":false,"id":"action_0_1731244546987","resultField":"27","decimalPlaces":"2","isError":false,"conditionId":"1731244400320","conditionTrue":false,"baseField":"8"},{"replaceText":"","readOnly":false,"newCalculationType":true,"allowZeroCopy":true,"useCommasForDecimals":false,"operands":"40","equation":"{40}","showBeforeInput":false,"showEmptyDecimals":false,"ignoreHiddenFields":false,"insertAsText":false,"id":"action_0_1731244597975","resultField":"27","decimalPlaces":"2","isError":false,"conditionId":"1731244427022","conditionTrue":false,"baseField":"8"},{"replaceText":"","readOnly":false,"newCalculationType":true,"allowZeroCopy":true,"useCommasForDecimals":false,"operands":"","equation":"You had a very good meal, the cuisto is proud","showBeforeInput":false,"showEmptyDecimals":false,"ignoreHiddenFields":false,"insertAsText":false,"id":"action_0_1731243407697","resultField":"27","decimalPlaces":"2","isError":false,"conditionId":"1731242264274","conditionTrue":false,"baseField":"8"},{"replaceText":"","readOnly":false,"newCalculationType":true,"allowZeroCopy":true,"useCommasForDecimals":false,"operands":"","equation":"You had a good meal, the cuisto is still proud that you enjoyed it, but he could be better, see you next time !!","showBeforeInput":false,"showEmptyDecimals":false,"ignoreHiddenFields":false,"insertAsText":false,"id":"action_0_1731243355660","resultField":"27","decimalPlaces":"2","isError":false,"conditionId":"1731243041144","conditionTrue":false,"baseField":"8"}]);
+   JotForm.setConditions([{"action":[{"id":"action_1731247325168","visibility":"Show","isError":false,"field":"41"}],"id":"1731247342762","index":"3","link":"Any","priority":"3","terms":[{"id":"term_1731247325168","field":"8","operator":"equals","value":"Very good","isError":false}],"type":"field"},{"action":[{"id":"action_0_1731249909693","visibility":"Show","isError":false,"field":"45"}],"id":"1731249905322","index":"4","link":"Any","priority":"4","terms":[{"id":"term_0_1731249909693","field":"8","operator":"equals","value":"Bad","isError":false}],"type":"field"},{"action":[{"id":"action_0_1731249856368","visibility":"Show","isError":false,"field":"43"}],"id":"1731249850855","index":"5","link":"Any","priority":"5","terms":[{"id":"term_0_1731249856368","field":"8","operator":"equals","value":"Good","isError":false}],"type":"field"},{"action":[{"id":"action_0_1731249891381","visibility":"Show","isError":false,"field":"44"}],"id":"1731249889620","index":"6","link":"Any","priority":"6","terms":[{"id":"term_0_1731249891381","field":"8","operator":"equals","value":"Average","isError":false}],"type":"field"},{"action":[{"id":"action_0_1731247353334","visibility":"Show","isError":false,"field":"42"}],"id":"1731247350781","index":"7","link":"Any","priority":"7","terms":[{"id":"term_0_1731247353334","field":"8","operator":"equals","value":"Very bad","isError":false}],"type":"field"},{"action":[{"replaceText":"","readOnly":false,"newCalculationType":true,"allowZeroCopy":true,"useCommasForDecimals":false,"operands":"38","equation":"{38}","showBeforeInput":false,"showEmptyDecimals":false,"ignoreHiddenFields":false,"insertAsText":false,"id":"action_0_1731244182533","resultField":"27","decimalPlaces":"2","isError":false,"conditionId":"1731243853965","conditionTrue":false,"baseField":"8"}],"id":"1731243853965","index":"8","link":"Any","priority":"8","terms":[{"id":"term_0_1731244182533","field":"8","operator":"equals","value":"Very good","isError":false}],"type":"calculation"},{"action":[{"replaceText":"","readOnly":false,"newCalculationType":true,"allowZeroCopy":true,"useCommasForDecimals":false,"operands":"39","equation":"{39}","showBeforeInput":false,"showEmptyDecimals":false,"ignoreHiddenFields":false,"insertAsText":false,"id":"action_0_1731244546987","resultField":"27","decimalPlaces":"2","isError":false,"conditionId":"1731244400320","conditionTrue":false,"baseField":"8"}],"id":"1731244400320","index":"9","link":"Any","priority":"9","terms":[{"id":"term_0_1731244546987","field":"8","operator":"equals","value":"Good","isError":false}],"type":"calculation"},{"action":[{"replaceText":"","readOnly":false,"newCalculationType":true,"allowZeroCopy":true,"useCommasForDecimals":false,"operands":"40","equation":"{40}","showBeforeInput":false,"showEmptyDecimals":false,"ignoreHiddenFields":false,"insertAsText":false,"id":"action_0_1731244597975","resultField":"27","decimalPlaces":"2","isError":false,"conditionId":"1731244427022","conditionTrue":false,"baseField":"8"}],"id":"1731244427022","index":"10","link":"Any","priority":"10","terms":[{"id":"term_0_1731244597975","field":"8","operator":"equals","value":"Average","isError":false}],"type":"calculation"},{"action":[{"replaceText":"","readOnly":false,"newCalculationType":true,"allowZeroCopy":true,"useCommasForDecimals":false,"operands":"","equation":"You had a very good meal, the cuisto is proud","showBeforeInput":false,"showEmptyDecimals":false,"ignoreHiddenFields":false,"insertAsText":false,"id":"action_0_1731243407697","resultField":"27","decimalPlaces":"2","isError":false,"conditionId":"1731242264274","conditionTrue":false,"baseField":"8"}],"disabled":"1","id":"1731242264274","index":"11","link":"Any","priority":"11","terms":[{"id":"term_0_1731243407697","field":"8","operator":"equals","value":"Very good","isError":false}],"type":"calculation"},{"action":[{"replaceText":"","readOnly":false,"newCalculationType":true,"allowZeroCopy":true,"useCommasForDecimals":false,"operands":"","equation":"You had a good meal, the cuisto is still proud that you enjoyed it, but he could be better, see you next time !!","showBeforeInput":false,"showEmptyDecimals":false,"ignoreHiddenFields":false,"insertAsText":false,"id":"action_0_1731243355660","resultField":"27","decimalPlaces":"2","isError":false,"conditionId":"1731243041144","conditionTrue":false,"baseField":"8"}],"disabled":"1","id":"1731243041144","index":"12","link":"Any","priority":"12","terms":[{"id":"term_0_1731243355660","field":"8","operator":"equals","value":"Good","isError":false}],"type":"calculation"}]);	JotForm.clearFieldOnHide="disable";
+	JotForm.submitError="jumpToFirstError";
+	window.addEventListener('DOMContentLoaded',function(){window.brandingFooter.init({"formID":243141088242046,"campaign":"powered_by_jotform_le","isCardForm":false,"isLegacyForm":true,"formLanguage":"en"})});	JotForm.isFullSource = true;
 
-                    submissions.forEach(submission => {
-                        let name = submission.answers["1"].answer; // Adjust field ID
-                        let value = parseInt(submission.answers["2"].answer); // Adjust field ID
-                        chartData.push([name, value]);
-                    });
+	JotForm.init(function(){
+	/*INIT-START*/
+if (window.JotForm && JotForm.accessible) $('input_27').setAttribute('tabindex',0);
+      $$("#input_38")[0].setValue($$('#input_38')[0].value.replace(/&#13;&#10;/g, '\n'));
+if (window.JotForm && JotForm.accessible) $('input_38').setAttribute('tabindex',0);
+      $$("#input_39")[0].setValue($$('#input_39')[0].value.replace(/&#13;&#10;/g, '\n'));
+if (window.JotForm && JotForm.accessible) $('input_39').setAttribute('tabindex',0);
+      $$("#input_40")[0].setValue($$('#input_40')[0].value.replace(/&#13;&#10;/g, '\n'));
+if (window.JotForm && JotForm.accessible) $('input_40').setAttribute('tabindex',0);
+      JotForm.alterTexts({"ageVerificationError":"You must be older than {minAge} years old to submit this form.","alphabetic":"This field can only contain letters","alphanumeric":"This field can only contain letters and numbers.","cancelAppointment":"Cancel Appointment","cancelSelection":"Cancel Selection","ccDonationMinLimitError":"Minimum amount is {minAmount} {currency}","ccInvalidCVC":"CVC number is invalid.","ccInvalidExpireDate":"Expire date is invalid.","ccInvalidExpireMonth":"Expiration month is invalid.","ccInvalidExpireYear":"Expiration year is invalid.","ccInvalidNumber":"Credit Card Number is invalid.","ccMissingDetails":"Please fill up the credit card details.","ccMissingDonation":"Please enter numeric values for donation amount.","ccMissingProduct":"Please select at least one product.","characterLimitError":"Too many Characters.  The limit is","characterMinLimitError":"Too few characters. The minimum is","chooseAFile_infoMessage":"Choose a file","confirmClearForm":"Are you sure you want to clear the form","confirmEmail":"E-mail does not match","currency":"This field can only contain currency values.","cyrillic":"This field can only contain cyrillic characters","dateInvalid":"This date is not valid. The date format is {format}","dateInvalidSeparate":"This date is not valid. Enter a valid {element}.","dateLimited":"This date is unavailable.","disallowDecimals":"Please enter a whole number.","doneButton":"Done","doneMessage":"Well done! All errors are fixed.","dragAndDropFilesHere_infoMessage":"Drag and drop files here","email":"Enter a valid e-mail address","error":"Error","fieldError":"field has an error.","fillMask":"Field value must fill mask.","formerSelectedTime":"Former Time","freeEmailError":"Free email accounts are not allowed","generalError":"There are errors on the form. Please fix them before continuing.","generalPageError":"There are errors on this page. Please fix them before continuing.","geoNotAvailableDesc":"Location provider not available. Please enter the address manually.","geoNotAvailableTitle":"Position Unavailable","geoPermissionDesc":"Check your browser's privacy settings.","geoPermissionTitle":"Permission Denied","geoTimeoutDesc":"Please check your internet connection and try again.","geoTimeoutTitle":"Timeout","gradingScoreError":"Score total should only be less than or equal to","incompleteFields":"There are incomplete required fields. Please complete them.","inputCarretErrorA":"Input should not be less than the minimum value:","inputCarretErrorB":"Input should not be greater than the maximum value:","invalidTime":"Enter a valid time","justSoldOut":"Just Sold Out","lessThan":"Your score should be less than or equal to","maxCharactersError":"The number of characters should not be more than the maximum value:","maxDigitsError":"The maximum digits allowed is","maxFileSize_infoMessage":"Max. file size","maxSelectionsError":"The maximum number of selections allowed is ","minCharactersError":"The number of characters should not be less than the minimum value:","minSelectionsError":"The minimum required number of selections is ","multipleError":"There are {count} errors on this page. Please correct them before moving on.","multipleFileUploads_emptyError":"{file} is empty, please select files again without it.","multipleFileUploads_fileLimitError":"Only {fileLimit} file uploads allowed.","multipleFileUploads_minSizeError":"{file} is too small, minimum file size is {minSizeLimit}.","multipleFileUploads_onLeave":"The files are being uploaded, if you leave now the upload will be cancelled.","multipleFileUploads_sizeError":"{file} is too large, maximum file size is {sizeLimit}.","multipleFileUploads_typeError":"{file} has invalid extension. Only {extensions} are allowed.","multipleFileUploads_uploadFailed":"File upload failed, please remove it and upload the file again.","nextButtonText":"Next","noSlotsAvailable":"No slots available","notEnoughStock":"Not enough stock for the current selection","notEnoughStock_remainedItems":"Not enough stock for the current selection ({count} items left)","noUploadExtensions":"File has no extension file type (e.g. .txt, .png, .jpeg)","numeric":"This field can only contain numeric values","oneError":"There is {count} error on this page. Please correct it before moving on.","pastDatesDisallowed":"Date must not be in the past.","pleaseWait":"Please wait...","prevButtonText":"Previous","progressMiddleText":"of","required":"This field is required.","requiredLegend":"All fields marked with * are required and must be filled.","requireEveryCell":"Every cell is required.","requireEveryRow":"Every row is required.","requireOne":"At least one field required.","restrictedDomain":"This domain is not allowed","reviewBackText":"Back to Form","reviewSubmitText":"Review and Submit","seeAllText":"See All","seeErrorsButton":"See Errors","selectedTime":"Selected Time","selectionSoldOut":"Selection Sold Out","slotUnavailable":"{time} on {date} has been selected is unavailable. Please select another slot.","soldOut":"Sold Out","startButtonText":"START","submissionLimit":"Sorry! Only one entry is allowed. &lt;br&gt; Multiple submissions are disabled for this form.","submitButtonText":"Submit","subProductItemsLeft":"({count} items left)","uploadExtensions":"You can only upload following files:","uploadFilesize":"File size cannot be bigger than:","uploadFilesizemin":"File size cannot be smaller than:","url":"This field can only contain a valid URL","validateEmail":"You need to validate this e-mail","wordLimitError":"Too many words. The limit is","wordMinLimitError":"Too few words.  The minimum is"});
+	/*INIT-END*/
+	});
 
-                    var dataTable = google.visualization.arrayToDataTable(chartData);
-                    var options = { title: 'Live Jotform Data Chart', width: 600, height: 400 };
-                    var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
-                    chart.draw(dataTable, options);
-                })
-                .catch(error => console.log("Error fetching data:", error));
-        }
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"heading","qid":"1","text":"Restaurant","type":"control_head"},null,null,null,null,null,null,{"description":"","name":"typeA","qid":"8","text":"How was the meal ?","type":"control_radio"},null,null,null,{"description":"","name":"howWas","qid":"12","text":"How was the beverage ?","type":"control_radio"},{"description":"","name":"howWas13","qid":"13","text":"How was the dessert ?","type":"control_radio"},{"description":"","name":"howWas14","qid":"14","text":"How was the premises ?","type":"control_radio"},{"description":"","name":"howWas15","qid":"15","text":"How was the toilet ?","type":"control_radio"},null,null,{"description":"","name":"calculation_q1","qid":"18","subLabel":"","text":"Calculation","type":"control_calculation"},null,null,{"name":"submit","qid":"21","text":"Submit","type":"control_button"},null,null,{"description":"","name":"email","qid":"24","subLabel":"","text":"Email","type":"control_email"},null,null,{"description":"","mde":"No","name":"typeA27","qid":"27","subLabel":"","text":"Question 1 answer :","type":"control_textarea","wysiwyg":"Disable"},null,null,null,null,null,null,null,null,null,null,{"description":"","mde":"No","name":"1verygood","qid":"38","subLabel":"","text":"1-verygood","type":"control_textarea","wysiwyg":"Disable"},{"description":"","mde":"No","name":"1verygood39","qid":"39","subLabel":"","text":"2-good","type":"control_textarea","wysiwyg":"Disable"},{"description":"","mde":"No","name":"3average","qid":"40","subLabel":"","text":"3-average","type":"control_textarea","wysiwyg":"Disable"},{"description":"","labelText":"","name":"image","qid":"41","text":"5.6730c5638da899.66048416","type":"control_image"},{"description":"","labelText":"","name":"image42","qid":"42","text":"1.6730c579c06f10.79182259","type":"control_image"},{"description":"","labelText":"","name":"46730c67e12d1c560896506","qid":"43","text":"4.6730c67e12d1c5.60896506","type":"control_image"},{"description":"","labelText":"","name":"36730c68741631719837608","qid":"44","text":"3.6730c687416317.19837608","type":"control_image"},{"description":"","labelText":"","name":"26730c6932ea24006271796","qid":"45","text":"2.6730c6932ea240.06271796","type":"control_image"},null,null,null,null,null,null,null,{"name":"typeA53","qid":"53","text":"","type":"control_widget"}]);}, 20); 
+</script>
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/stylebuilder/static/form-common.css?v=674b3f4
+"/>
+<style type="text/css">@media print{*{-webkit-print-color-adjust: exact !important;color-adjust: exact !important;}.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+<link id="custom-font" type="text/css" rel="stylesheet" href="//cdn.jotfor.ms/fonts/?family=Inter" />
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/themes/CSS/defaultV2.css?v=674b3f4
+"/>
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/64012b8864323209265bec99.css?v=3.3.60749&themeRevisionID=65cc87cf6163330c83a920b6"/>
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.60749" />
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.60749" />
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
 
-        setInterval(drawChart, 5000); // Refresh every 5 seconds
-    </script>
+/* Begining of advanced designer */
+/*PREFERENCES STYLE*/
+/*  1 - Preferences style */
+/*  1 - FONT FAMILY */
+.form-all {
+  font-family: "Inter", sans-serif;
+}
+/* 2 - FORM WIDTH */
+.form-all {
+  max-width: 752px;
+}
+/* 5 - FONT SIZE */
+.form-all {
+  font-size: 16px;
+}
+/* 5 - input bg color */
+.form-textbox,
+.form-textarea,
+.form-radio-other-input,
+.form-checkbox-other-input,
+.form-captcha input,
+.form-spinner input {
+  background-color: #ffffff;
+}
+/* 10 - LINE SPACING */
+.form-line {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.supernova .form-all,
+.form-all {
+  background-color: #ffffff;
+}
+.supernova {
+  background-color: #f3f3fe;
+}
+.supernova body {
+  background-color: transparent;
+}
+.form-all,
+.form-label-top,
+.form-label-left,
+.form-label-right,
+.form-html,
+.form-checkbox-item label,
+.form-radio-item label,
+span.FITB .qb-checkbox-label,
+span.FITB .qb-radiobox-label,
+span.FITB .form-radio label,
+span.FITB .form-checkbox label,
+[data-blotid][data-type=checkbox] [data-labelid],
+[data-blotid][data-type=radiobox] [data-labelid],
+span.FITB-inptCont[data-type=checkbox] label,
+span.FITB-inptCont[data-type=radiobox] label,
+.form-sub-label {
+  color: #2c3344;
+}
+/*PREFERENCES STYLE*/
+/* 17 - INPUT WIDTHS */
+/*  20 - FORM PADDING */
+ul.form-section {
+  padding: 0px 38px;
+}
+.form-textbox:not(#productSearch-input),
+.form-textarea,
+li[data-type=control_fileupload] .qq-upload-button,
+.signature-wrapper {
+  border-width: 0px;
+  width: 100% !important;
+}
+/* Heights */
+/* 11 - LINE PADDING */
+/* LABEL STYLE */
+/* 12 - ROUNDED INPUTS */
+.form-textbox:not(#productSearch-input),
+.form-radio-other-input,
+.form-checkbox-other-input,
+.form-captcha input,
+.form-spinner input,
+.form-pagebreak-back,
+.form-pagebreak-next,
+.qq-upload-button,
+.signature-wrapper,
+.form-error-message {
+  border-radius: 20px;
+}
+.form-textarea {
+  border-radius: 20px;
+  padding: 10px;
+}
+.supernova .form-all,
+.form-all {
+  border-radius: 20px;
+}
+.form-section:first-child {
+  border-radius: 20px 20px 0 0;
+}
+.form-section:last-child {
+  border-radius: 0 0 20px 20px;
+}
+.form-radio-item,
+.form-checkbox-item {
+  padding-bottom: 0px;
+}
+.form-radio-item:last-child,
+.form-checkbox-item:last-child {
+  padding-bottom: 0;
+}
+.form-checkbox-item .form-checkbox + label,
+.form-checkbox-item .form-checkbox + span {
+  padding-left: 30px;
+}
+.form-radio-item .form-radio + label,
+.form-radio-item .form-radio + span {
+  padding-left: 30px;
+}
+.form-single-column .form-checkbox-item,
+.form-single-column .form-radio-item {
+  width: 100%;
+}
+.form-checkbox-item .editor-container div,
+.form-radio-item .editor-container div {
+  position: relative;
+}
+.form-checkbox-item .editor-container div:before,
+.form-radio-item .editor-container div:before {
+  display: inline-block;
+  vertical-align: middle;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+.form-radio-item:not(#foo),
+.form-checkbox-item:not(#foo) {
+  position: relative;
+}
+.form-radio-item:not(#foo) .form-radio + span:before,
+.form-checkbox-item:not(#foo) .form-radio + span:before,
+.form-radio-item:not(#foo) .form-radio + span:after,
+.form-checkbox-item:not(#foo) .form-radio + span:after,
+.form-radio-item:not(#foo) .form-radio:checked + span div:after,
+.form-checkbox-item:not(#foo) .form-radio:checked + span div:after,
+.form-radio-item:not(#foo) .form-checkbox + span:before,
+.form-checkbox-item:not(#foo) .form-checkbox + span:before,
+.form-radio-item:not(#foo) .form-checkbox + span:after,
+.form-checkbox-item:not(#foo) .form-checkbox + span:after,
+.form-radio-item:not(#foo) .form-checkbox:checked + span div:after,
+.form-checkbox-item:not(#foo) .form-checkbox:checked + span div:after {
+  display: none;
+}
+.form-radio-item:not(#foo) .form-radio + label:after,
+.form-checkbox-item:not(#foo) .form-radio + label:after,
+.form-radio-item:not(#foo) .form-radio + span:after,
+.form-checkbox-item:not(#foo) .form-radio + span:after,
+.form-radio-item:not(#foo) .form-checkbox + label:after,
+.form-checkbox-item:not(#foo) .form-checkbox + label:after,
+.form-radio-item:not(#foo) .form-checkbox + span:after,
+.form-checkbox-item:not(#foo) .form-checkbox + span:after {
+  opacity: 1;
+  transform: scale(1);
+}
+.form-radio-item:not(#foo) label:after,
+.form-checkbox-item:not(#foo) label:after {
+  background-color: #ffffff;
+}
+.form-radio-item:not(#foo) .form-checkbox + label,
+.form-checkbox-item:not(#foo) .form-checkbox + label,
+.form-radio-item:not(#foo) .form-checkbox + span,
+.form-checkbox-item:not(#foo) .form-checkbox + span,
+.form-radio-item:not(#foo) .form-radio + label,
+.form-checkbox-item:not(#foo) .form-radio + label,
+.form-radio-item:not(#foo) .form-radio + span,
+.form-checkbox-item:not(#foo) .form-radio + span {
+  padding-left: 50px;
+}
+.form-radio-item:not(#foo) label,
+.form-checkbox-item:not(#foo) label {
+  float: left;
+}
+.form-radio-item:not(#foo) label:before,
+.form-checkbox-item:not(#foo) label:before,
+.form-radio-item:not(#foo) .editor-container div:before,
+.form-checkbox-item:not(#foo) .editor-container div:before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  vertical-align: baseline;
+  border-radius: 12px;
+  top: 0;
+  left: 4px;
+  width: 36px;
+  height: 22px;
+  cursor: pointer;
+  background: #C3CAD8;
+}
+.form-radio-item:not(#foo) label:after,
+.form-checkbox-item:not(#foo) label:after,
+.form-radio-item:not(#foo) .editor-container div:after,
+.form-checkbox-item:not(#foo) .editor-container div:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 3px;
+  left: 8px;
+  width: 15px;
+  height: 15px;
+  border-radius: 12px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+.form-radio-item:not(#foo) input:checked + label:before,
+.form-checkbox-item:not(#foo) input:checked + label:before {
+  background: #487bff;
+}
+.form-radio-item:not(#foo) input:checked + label:after,
+.form-checkbox-item:not(#foo) input:checked + label:after {
+  left: 20px;
+}
+.submit-button {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: inherit;
+}
+.submit-button {
+  min-width: 180px;
+}
+.form-all .form-pagebreak-back,
+.form-all .form-pagebreak-next {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+.form-all .form-pagebreak-back,
+.form-all .form-pagebreak-next {
+  min-width: 128px;
+}
+li[data-type="control_image"] div {
+  text-align: left;
+}
+li[data-type="control_image"] img {
+  border: none;
+  border-width: 0px !important;
+  border-style: solid !important;
+  border-color: false !important;
+}
+.supernova {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: auto;
+  background-size: cover;
+}
+.supernova {
+  background-image: none;
+  background-image: url("https://www.jotform.com/uploads/beril/form_files/galaxy-bg-image.6405a140a1b097.18087512.png");
+}
+#stage {
+  background-image: none;
+  background-image: url("https://www.jotform.com/uploads/beril/form_files/galaxy-bg-image.6405a140a1b097.18087512.png");
+}
+/* | */
+.form-all {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-size: cover;
+}
+.form-header-group {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+}
+.header-large h1.form-header {
+  font-size: 2em;
+}
+.header-large h2.form-header {
+  font-size: 1.5em;
+}
+.header-large h3.form-header {
+  font-size: 1.17em;
+}
+.header-large h1 + .form-subHeader {
+  font-size: 1em;
+}
+.header-large h2 + .form-subHeader {
+  font-size: .875em;
+}
+.header-large h3 + .form-subHeader {
+  font-size: .75em;
+}
+.header-default h1.form-header {
+  font-size: 2em;
+}
+.header-default h2.form-header {
+  font-size: 1.5em;
+}
+.header-default h3.form-header {
+  font-size: 1.17em;
+}
+.header-default h1 + .form-subHeader {
+  font-size: 1em;
+}
+.header-default h2 + .form-subHeader {
+  font-size: .875em;
+}
+.header-default h3 + .form-subHeader {
+  font-size: .75em;
+}
+.header-small h1.form-header {
+  font-size: 2em;
+}
+.header-small h2.form-header {
+  font-size: 1.5em;
+}
+.header-small h3.form-header {
+  font-size: 1.17em;
+}
+.header-small h1 + .form-subHeader {
+  font-size: 1em;
+}
+.header-small h2 + .form-subHeader {
+  font-size: .875em;
+}
+.header-small h3 + .form-subHeader {
+  font-size: .75em;
+}
+.form-header-group {
+  text-align: left;
+}
+div.form-header-group.header-large,
+div.form-header-group.hasImage {
+  margin: 0px -38px;
+}
+div.form-header-group.header-large,
+div.form-header-group.hasImage {
+  padding: 40px 52px;
+}
+.form-header-group .form-header,
+.form-header-group .form-subHeader {
+  color: #2c3344;
+}
+.form-line-error {
+  -webkit-transition-property: none;
+  -moz-transition-property: none;
+  -ms-transition-property: none;
+  -o-transition-property: none;
+  transition-property: none;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  background-color: #ffd6d6;
+}
+.form-line-error .form-error-message {
+  background-color: #f23a3c;
+  clear: both;
+  float: none;
+}
+.form-line-error .form-error-message .form-error-arrow {
+  border-bottom-color: #f23a3c;
+}
+.form-line-error input:not(#coupon-input),
+.form-line-error textarea,
+.form-line-error .form-validation-error {
+  border: 1px solid #f23a3c;
+  box-shadow: 0 0 3px #f23a3c;
+}
+.form-line-error {
+  -webkit-transition-property: none;
+  -moz-transition-property: none;
+  -ms-transition-property: none;
+  -o-transition-property: none;
+  transition-property: none;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  background-color: #ffd6d6;
+}
+.form-header-group .form-header,
+.form-header-group .form-subHeader {
+  color: #2c3344;
+}
+.form-line-active {
+  background-color: #f1f5ff;
+}
+/* 29 - FORM COLUMNS */
+
+/*__INSPECT_SEPERATOR__*/
+.form-label.form-label-auto {
+    display : block;
+    float : none;
+    text-align : left;
+    width : 100%;
+}
+
+.form-readonly.form-textarea {
+    border : none !important;
+    outline : none !important;
+}
+
+.form-line-active {
+    background-color : transparent !important;
+}
+
+
+    /* Injected CSS Code */
+</style>
+
+<form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();" action="https://submit.jotform.com/submit/243141088242046" method="post" name="form_243141088242046" id="243141088242046" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="243141088242046" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1738707515820" /><input type="hidden" id="submitSource" name="submitSource" value="unknown" /><input type="hidden" id="buildDate" name="buildDate" value="1738707515820" /><input type="hidden" name="uploadServerUrl" value="https://upload.jotform.com/upload" /><input type="hidden" name="eventObserver" value="1" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section" role="presentation">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-large">
+          <div class="header-text httal htvam">
+            <h1 id="header_1" class="form-header" data-component="header">Restaurant</h1>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_radio" id="id_8"><label class="form-label form-label-top form-label-auto" id="label_8" aria-hidden="false"> How was the meal ?<span class="form-required">*</span> </label>
+        <div id="cid_8" class="form-input-wide jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_8" data-component="radio"><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_8" type="radio" class="form-radio validate[required]" id="input_8_0" name="q8_typeA" data-calcvalue="1" required="" value="Very good" /><label id="label_input_8_0" for="input_8_0">Very good</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_8" type="radio" class="form-radio validate[required]" id="input_8_1" name="q8_typeA" data-calcvalue="2" required="" value="Good" /><label id="label_input_8_1" for="input_8_1">Good</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_8" type="radio" class="form-radio validate[required]" id="input_8_2" name="q8_typeA" data-calcvalue="3" required="" value="Average" /><label id="label_input_8_2" for="input_8_2">Average</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_8" type="radio" class="form-radio validate[required]" id="input_8_3" name="q8_typeA" data-calcvalue="4" required="" value="Bad" /><label id="label_input_8_3" for="input_8_3">Bad</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_8" type="radio" class="form-radio validate[required]" id="input_8_4" name="q8_typeA" data-calcvalue="5" required="" value="Very bad" /><label id="label_input_8_4" for="input_8_4">Very bad</label></span></div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_radio" id="id_12"><label class="form-label form-label-top form-label-auto" id="label_12" aria-hidden="false"> How was the beverage ?<span class="form-required">*</span> </label>
+        <div id="cid_12" class="form-input-wide jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_12" data-component="radio"><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_12" type="radio" class="form-radio validate[required]" id="input_12_0" name="q12_howWas" data-calcvalue="1" required="" value="Very good" /><label id="label_input_12_0" for="input_12_0">Very good</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_12" type="radio" class="form-radio validate[required]" id="input_12_1" name="q12_howWas" data-calcvalue="2" required="" value="Good" /><label id="label_input_12_1" for="input_12_1">Good</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_12" type="radio" class="form-radio validate[required]" id="input_12_2" name="q12_howWas" data-calcvalue="3" required="" value="Average" /><label id="label_input_12_2" for="input_12_2">Average</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_12" type="radio" class="form-radio validate[required]" id="input_12_3" name="q12_howWas" data-calcvalue="4" required="" value="Bad" /><label id="label_input_12_3" for="input_12_3">Bad</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_12" type="radio" class="form-radio validate[required]" id="input_12_4" name="q12_howWas" data-calcvalue="5" required="" value="Very bad" /><label id="label_input_12_4" for="input_12_4">Very bad</label></span></div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_radio" id="id_13"><label class="form-label form-label-top form-label-auto" id="label_13" aria-hidden="false"> How was the dessert ?<span class="form-required">*</span> </label>
+        <div id="cid_13" class="form-input-wide jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_13" data-component="radio"><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_13" type="radio" class="form-radio validate[required]" id="input_13_0" name="q13_howWas13" data-calcvalue="1" required="" value="Very good" /><label id="label_input_13_0" for="input_13_0">Very good</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_13" type="radio" class="form-radio validate[required]" id="input_13_1" name="q13_howWas13" data-calcvalue="2" required="" value="Good" /><label id="label_input_13_1" for="input_13_1">Good</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_13" type="radio" class="form-radio validate[required]" id="input_13_2" name="q13_howWas13" data-calcvalue="3" required="" value="Average" /><label id="label_input_13_2" for="input_13_2">Average</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_13" type="radio" class="form-radio validate[required]" id="input_13_3" name="q13_howWas13" data-calcvalue="4" required="" value="Bad" /><label id="label_input_13_3" for="input_13_3">Bad</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_13" type="radio" class="form-radio validate[required]" id="input_13_4" name="q13_howWas13" data-calcvalue="5" required="" value="Very bad" /><label id="label_input_13_4" for="input_13_4">Very bad</label></span></div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_radio" id="id_14"><label class="form-label form-label-top form-label-auto" id="label_14" aria-hidden="false"> How was the premises ?<span class="form-required">*</span> </label>
+        <div id="cid_14" class="form-input-wide jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_14" data-component="radio"><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_14" type="radio" class="form-radio validate[required]" id="input_14_0" name="q14_howWas14" data-calcvalue="1" required="" value="Very good" /><label id="label_input_14_0" for="input_14_0">Very good</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_14" type="radio" class="form-radio validate[required]" id="input_14_1" name="q14_howWas14" data-calcvalue="2" required="" value="Good" /><label id="label_input_14_1" for="input_14_1">Good</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_14" type="radio" class="form-radio validate[required]" id="input_14_2" name="q14_howWas14" data-calcvalue="3" required="" value="Average" /><label id="label_input_14_2" for="input_14_2">Average</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_14" type="radio" class="form-radio validate[required]" id="input_14_3" name="q14_howWas14" data-calcvalue="4" required="" value="Bad" /><label id="label_input_14_3" for="input_14_3">Bad</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_14" type="radio" class="form-radio validate[required]" id="input_14_4" name="q14_howWas14" data-calcvalue="5" required="" value="Very bad" /><label id="label_input_14_4" for="input_14_4">Very bad</label></span></div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_radio" id="id_15"><label class="form-label form-label-top form-label-auto" id="label_15" aria-hidden="false"> How was the toilet ?<span class="form-required">*</span> </label>
+        <div id="cid_15" class="form-input-wide jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_15" data-component="radio"><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_15" type="radio" class="form-radio validate[required]" id="input_15_0" name="q15_howWas15" data-calcvalue="1" required="" value="Very good" /><label id="label_input_15_0" for="input_15_0">Very good</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_15" type="radio" class="form-radio validate[required]" id="input_15_1" name="q15_howWas15" data-calcvalue="2" required="" value="Good" /><label id="label_input_15_1" for="input_15_1">Good</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_15" type="radio" class="form-radio validate[required]" id="input_15_2" name="q15_howWas15" data-calcvalue="3" required="" value="Average" /><label id="label_input_15_2" for="input_15_2">Average</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_15" type="radio" class="form-radio validate[required]" id="input_15_3" name="q15_howWas15" data-calcvalue="4" required="" value="Bad" /><label id="label_input_15_3" for="input_15_3">Bad</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_15" type="radio" class="form-radio validate[required]" id="input_15_4" name="q15_howWas15" data-calcvalue="5" required="" value="Very bad" /><label id="label_input_15_4" for="input_15_4">Very bad</label></span></div>
+        </div>
+      </li>
+      <li class="form-line always-hidden" data-type="control_calculation" id="id_18"><label class="form-label form-label-top form-label-auto" id="label_18" for="input_18" aria-hidden="false"> Calculation </label>
+        <div id="cid_18" class="form-input-wide always-hidden" data-layout="half"> <input aria-labelledby="label_18" data-component="calculation" type="text" data-defaultvalue="0" class="form-textbox" data-type="input-textbox" id="input_18" name="q18_calculation_q1" size="20" value="0" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_image" id="id_41">
+        <div id="cid_41" class="form-input-wide always-hidden" data-layout="full">
+          <div style="text-align:center" aria-hidden="true" role="none"><img alt="Image-41" loading="lazy" class="form-image" style="border:0" src="https://www.jotform.com/uploads/redinehoudima/form_files/5.6730c5638da899.66048416.jpg" height="102px" width="99px" data-component="image" role="none" aria-hidden="true" tabindex="-1" /></div>
+        </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_image" id="id_43">
+        <div id="cid_43" class="form-input-wide always-hidden" data-layout="full">
+          <div style="text-align:center" aria-hidden="true" role="none"><img alt="Image-43" loading="lazy" class="form-image" style="border:0" src="https://www.jotform.com/uploads/redinehoudima/form_files/4.6730c67e12d1c5.60896506.jpg" height="102px" width="99px" data-component="image" role="none" aria-hidden="true" tabindex="-1" /></div>
+        </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_image" id="id_44">
+        <div id="cid_44" class="form-input-wide always-hidden" data-layout="full">
+          <div style="text-align:center" aria-hidden="true" role="none"><img alt="Image-44" loading="lazy" class="form-image" style="border:0" src="https://www.jotform.com/uploads/redinehoudima/form_files/3.6730c687416317.19837608.jpg" height="102px" width="99px" data-component="image" role="none" aria-hidden="true" tabindex="-1" /></div>
+        </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_image" id="id_45">
+        <div id="cid_45" class="form-input-wide always-hidden" data-layout="full">
+          <div style="text-align:center" aria-hidden="true" role="none"><img alt="Image-45" loading="lazy" class="form-image" style="border:0" src="https://www.jotform.com/uploads/redinehoudima/form_files/2.6730c6932ea240.06271796.jpg" height="102px" width="99px" data-component="image" role="none" aria-hidden="true" tabindex="-1" /></div>
+        </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_image" id="id_42">
+        <div id="cid_42" class="form-input-wide always-hidden" data-layout="full">
+          <div style="text-align:center" aria-hidden="true" role="none"><img alt="Image-42" loading="lazy" class="form-image" style="border:0" src="https://www.jotform.com/uploads/redinehoudima/form_files/1.6730c579c06f10.79182259.jpg" height="102px" width="99px" data-component="image" role="none" aria-hidden="true" tabindex="-1" /></div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textarea" id="id_27"><label class="form-label form-label-top form-label-auto" id="label_27" for="input_27" aria-hidden="false"> Question 1 answer : </label>
+        <div id="cid_27" class="form-input-wide" data-layout="full"> <textarea id="input_27" class="form-readonly form-textarea" name="q27_typeA27" style="width:648px;height:163px" tabindex="-1" data-component="textarea" readonly="" aria-labelledby="label_27"></textarea> </div>
+      </li>
+      <li class="form-line always-hidden" data-type="control_textarea" id="id_38"><label class="form-label form-label-top form-label-auto" id="label_38" for="input_38" aria-hidden="false"> 1-verygood </label>
+        <div id="cid_38" class="form-input-wide always-hidden" data-layout="full"> <textarea id="input_38" class="form-readonly form-textarea" name="q38_1verygood" style="width:648px;height:163px" tabindex="-1" data-component="textarea" readonly="" aria-labelledby="label_38">you answered &quot;very good&quot;. We are proud</textarea> </div>
+      </li>
+      <li class="form-line always-hidden" data-type="control_textarea" id="id_39"><label class="form-label form-label-top form-label-auto" id="label_39" for="input_39" aria-hidden="false"> 2-good </label>
+        <div id="cid_39" class="form-input-wide always-hidden" data-layout="full"> <textarea id="input_39" class="form-textarea" name="q39_1verygood39" style="width:648px;height:163px" data-component="textarea" aria-labelledby="label_39">you answered &quot;good&quot;. We are proud, but could do better. See you next time !</textarea> </div>
+      </li>
+      <li class="form-line always-hidden" data-type="control_textarea" id="id_40"><label class="form-label form-label-top form-label-auto" id="label_40" for="input_40" aria-hidden="false"> 3-average </label>
+        <div id="cid_40" class="form-input-wide always-hidden" data-layout="full"> <textarea id="input_40" class="form-textarea" name="q40_3average" style="width:648px;height:163px" data-component="textarea" aria-labelledby="label_40">you answered &quot;average&quot;. Please give us a second chance. See you next time !</textarea> </div>
+      </li>
+      <li class="form-line" data-type="control_email" id="id_24"><label class="form-label form-label-top form-label-auto" id="label_24" for="input_24" aria-hidden="false"> Email </label>
+        <div id="cid_24" class="form-input-wide" data-layout="half"> <input type="email" id="input_24" name="q24_email" class="form-textbox validate[Email]" data-defaultvalue="redine.houdima@gmail.com" autoComplete="section-input_24 email" style="width:310px" size="310" data-component="email" aria-labelledby="label_24" value="redine.houdima@gmail.com" /> </div>
+      </li>
+      <li class="form-line" data-type="control_widget" id="id_53"><label class="form-label form-label-top form-label-auto" id="label_53" for="input_53" aria-hidden="true"> </label>
+        <div id="cid_53" class="form-input-wide" data-layout="full">
+          <div data-widget-name="Iframe Embed" style="width:100%;text-align:Left;overflow-x:auto" data-component="widget-field"><iframe data-client-id="5295629cba137d764f000004" title="Iframe Embed" frameBorder="0" scrolling="no" allowtransparency="true" allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe" class="custom-field-frame" id="customFieldFrame_53" src="" style="max-width:600px;border:none;width:100%;height:300px" data-width="600" data-height="300"></iframe>
+            <div class="widget-inputs-wrapper"><input id="input_53" class="form-hidden form-widget  widget-static" type="hidden" name="q53_typeA53" value="" /><input id="widget_settings_53" class="form-hidden form-widget-settings" type="hidden" data-version="2" value="%5B%7B%22name%22%3A%22url%22%2C%22value%22%3A%22https%3A%2F%2Fredinehoudima.github.io%2Ftpc%2F%22%7D%2C%7B%22name%22%3A%22transparent%22%2C%22value%22%3A%22No%22%7D%5D" /></div>
+            <script type="text/javascript">
+              setTimeout(function()
+              {
+                function renderWidget()
+                {
+                  var _cFieldFrame = document.getElementById("customFieldFrame_53");
+                  if (_cFieldFrame)
+                  {
+                    _cFieldFrame.onload = function()
+                    {
+                      if (typeof widgetFrameLoaded !== 'undefined')
+                      {
+                        widgetFrameLoaded(53,
+                        {
+                          "formID": 243141088242046
+                        }, undefined)
+                      }
+                    };
+                    _cFieldFrame.src = "//widgets.jotform.io/iframeEmbed/?qid=53&isOpenedInPortal=undefined&isOpenedInAgent=undefined&align=Left&ref=" +
+                      encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' +
+                      '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
+                    _cFieldFrame.addClassName("custom-field-frame-rendered");
+                  }
+                }
+                if (false)
+                {
+                  var _interval = setInterval(function()
+                  {
+                    var dataMode = document.querySelector('html').getAttribute('data-mode');
+                    if (dataMode === 'fillMode')
+                    {
+                      renderWidget()
+                      clearInterval(_interval);
+                    }
+                  }, 1000);
+                }
+                else
+                {
+                  renderWidget();
+                }
+              }, 0);
+            </script>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_21">
+        <div id="cid_21" class="form-input-wide" data-layout="full">
+          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button id="input_21" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField legacy-submit" data-component="button" data-content="">Submit</button></div>
+        </div>
+      </li>
+      <li style="display:none">Should be Empty: <input type="text" name="website" value="" type="hidden" /></li>
+    </ul>
+  </div>
+  <script>
+    JotForm.showJotFormPowered = "new_footer";
+  </script>
+  <script>
+    JotForm.poweredByText = "Powered by Jotform";
+  </script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="243141088242046" />
+  <script type="text/javascript">
+    var all_spc = document.querySelectorAll("form[id='243141088242046'] .si" + "mple" + "_spc");
+    for (var i = 0; i < all_spc.length; i++)
+    {
+      all_spc[i].value = "243141088242046-243141088242046";
+    }
+  </script>
+</form>
+<link id=color-scheme-style href="https://cdn01.jotfor.ms/stylebuilder/static/color-scheme.css?v=3.3.60749" type="text/css" rel="stylesheet" /><script type="text/javascript">JotForm.ownerView=true;</script><script type="text/javascript">JotForm.isNewSACL=true;</script>
 </head>
 <body>
     <div id="chart_div"></div>
