@@ -7,7 +7,7 @@
         google.charts.setOnLoadCallback(drawChart);
 
         function drawChart() {
-            fetch("https://api.jotform.com/form/{FORM_ID}/submissions?apiKey={YOUR_API_KEY}")
+            fetch("https://api.jotform.com/form/243141088242046/submissions?apiKey=2373ec7e615a3f08d1867c89009aed78")
                 .then(response => response.json())
                 .then(data => {
                     let submissions = data.content;
